@@ -4,7 +4,7 @@ import requests
 import subprocess
 
 def jfrogUpload():
-  url = 'http://54.204.70.115:8082/artifactory/example-repo-local/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar'
+  url = 'http://44.201.157.19:8082/artifactory/example-repo-local/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar'
   file_path = '/home/ubuntu/Java_app_3.0/target/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar'
   username = 'admin'
   password = 'admin'
@@ -29,7 +29,7 @@ def mvnBuild():
     print(f"Error: Maven build failed with exit code {e.returncode}")
 
 def main():
-  #mvnBuild()
+  mvnBuild()
   jfrogUpload()
 
 
