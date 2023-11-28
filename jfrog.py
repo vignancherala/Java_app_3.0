@@ -29,8 +29,9 @@ def mvnBuild():
     print(f"Error: Maven build failed with exit code {e.returncode}")
 
 def main():
-  mvnBuild()
+  #mvnBuild()
   jfrogUpload()
 
 
 if __name__ == "__main__":
+    main()
